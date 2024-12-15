@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Power BI Mastery</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "League Spartan", sans-serif;
+      }
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .hero {
+        background: url("pics/logo.png") no-repeat center center/cover;
+        color: white;
+        text-align: left;
+        padding: 100px 80px;
+      }
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+      .hero p {
+        font-size: 1.5rem;
+        margin: 20px 0;
+      }
+      .course-card img {
+        height: 200px;
+        object-fit: cover;
+      }
+      .enroll-banner {
+        background: linear-gradient(90deg, #6a1b9a, #ab47bc);
+        color: white;
+        padding: 50px 20px;
+        text-align: center;
+      }
+      #contact form {
+        padding-left: 400px;
+      }
+      footer {
+        background-color: #343a40;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+      }
+      #btn:hover {
+        background-color: black;
+        transition: 0.4 ease;
+        box-shadow: 0 0 10px black;
+      }
+      .footer p {
+        color: black;
+      }
+      footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      footer .col {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+      }
+      footer h4 {
+        font-size: 14p;
+        padding-bottom: 20px;
+      }
+      footer p {
+        font-size: 18px;
+        margin: 0 0 8px 0;
+      }
+      footer a {
+        font-size: 18px;
+        text-decoration: none;
+        color: #575656;
+        margin-bottom: 10px;
+      }
+      footer .follow {
+        margin-top: 20px;
+      }
+      footer .follow i {
+        color: #464b52;
+        padding-right: 4px;
+        cursor: pointer;
+      }
+      footer .install .row img {
+        border: 1px solid black;
+        border-radius: 6px;
+      }
+      footer .row {
+        margin-top: 10px;
+        margin-bottom: 15px;
+      }
+      footer .follow i:hover,
+      footer a:hover {
+        color: white;
+      }
+      footer .copyright {
+        width: 100%;
+        text-align: center;
+      }
+      .section-p1 {
+        padding: 40px 80px;
+      }
+      h1 {
+        font-size: 50px;
+        line-height: 64px;
+        color: #222;
+      }
+
+      h2 {
+        font-size: 46px;
+        line-height: 54px;
+        color: #222;
+      }
+      h4 {
+        font-size: 20px;
+        color: #222;
+      }
+      h6 {
+        font-weight: 700;
+        font-size: 12px;
+      }
+      p {
+        font-size: 18px;
+        color: #464b52;
+        margin: 15px 0 20px 0;
+      }
+      .follow .icon i {
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="pics/logo1.jpg"
+            style="border-radius: 20px; width: 50px; height: 50px"
+            alt="Power BI Mastery"
+            width="150"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#courses">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#packages">Student Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#perks">Perks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#enroll">Enroll Now</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <h1 style="color: white">Master Power BI Today!</h1>
+      <p style="color: black">
+        Transform Data into Insights with Our Expert-Led Courses
+      </p>
+      <a
+        href="#enroll"
+        class="btn btn-lg btn-warning"
+        id="btn"
+        style="background-color: white; border: 2px solid black"
+        >Enroll Now</a
+      >
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6" style="padding-top: 60px">
+            <h2><b>Why Learn Power BI?</b></h2>
+            <p>
+              Power BI is the leading business analytics tool that helps you
+              turn data into powerful insights. Whether you're a data
+              professional, analyst, or manager, our courses are designed to
+              equip you with the skills to excel in the world of data
+              visualization and reporting.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="pics/logo.png"
+              alt="Power BI"
+              class="img-fluid"
+              style="border-radius: 20px; box-shadow: 0 0 8px black"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Our Courses</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card course-card">
+              <img
+                src="pics/c1.jpg"
+                class="card-img-top"
+                alt="Beginner Course"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Power BI for Beginners</h5>
+                <p class="card-text">
+                  Learn the fundamentals of Power BI, including data
+                  connections, basic visualizations, and creating simple
+                  dashboards.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card course-card">
+              <img
+                src="pics/c3.jpg"
+                class="card-img-top"
+                alt="Intermediate Course"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Advanced Power BI</h5>
+                <p class="card-text">
+                  Dive deeper into advanced features like DAX, data modeling,
+                  and creating interactive reports.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card course-card">
+              <img
+                src="pics/20945194.jpg"
+                class="card-img-top"
+                alt="Expert Course"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Power BI Masterclass</h5>
+                <p class="card-text">
+                  Master Power BI with hands-on projects, real-world case
+                  studies, and expert guidance.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Student Packages Section -->
+    <section id="packages" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Exclusive Student Packages</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Basic Student Package</h5>
+                <p class="card-text">
+                  Includes access to the Power BI for Beginners course with 6
+                  months of learning support.
+                </p>
+                <p><strong>Price:</strong> $99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Advanced Student Package</h5>
+                <p class="card-text">
+                  Includes access to the Advanced Power BI course and Power BI
+                  for Beginners course, with 1-year learning support.
+                </p>
+                <p><strong>Price:</strong> $199</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Premium Student Package</h5>
+                <p class="card-text">
+                  Includes all courses, lifetime access, 1-on-1 mentoring, and
+                  24/7 support.
+                </p>
+                <p><strong>Price:</strong> $299</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Perks Section -->
+    <section id="perks" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Perks & Benefits</h2>
+        <ul>
+          <li>
+            Get a certificate upon course completion to boost your resume.
+          </li>
+          <li>Exclusive access to webinars and expert-led workshops.</li>
+          <li>
+            Hands-on projects and real-world case studies for better learning.
+          </li>
+          <li>
+            Personalized learning support and mentorship from industry experts.
+          </li>
+          <li>Access to a community of Power BI learners and professionals.</li>
+          <img
+            src="pics/certificate.png"
+            alt="Certificate"
+            class="img-fluid mx-auto d-block"
+            width="300"
+          />
+        </ul>
+      </div>
+    </section>
+
+    <!-- Enroll Banner -->
+    <section id="enroll" class="enroll-banner">
+      <h2>Limited Seats Available!</h2>
+      <p>
+        Join the 10,000+ professionals who have transformed their careers with
+        Power BI.
+      </p>
+      <a href="#contact" class="btn btn-lg btn-light">Enroll Now</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <form style="max-width: 1000px; padding-left: 600px">
+        <h2 class="text-center mb-5">Contact Us.</h2>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Your Name"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Your Email"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea
+            class="form-control"
+            id="message"
+            rows="3"
+            placeholder="Your Message"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </section>
+    <footer class="footer section-p1" style="background-color: gold">
+      <div class="col">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="pics/logo1.jpg"
+            style="border-radius: 20px; width: 50px; height: 50px"
+            alt="Power BI Mastery"
+            width="150"
+        /></a>
+        <h4>Contact Us</h4>
+        <p>
+          <strong>Address</strong> Company X Inc., 188 Park Lane, San Francisco,
+          CA 94103
+        </p>
+        <p><strong>Phone</strong> +91 177 - 654 - 3210, +91 800 - 345-1234</p>
+        <p><strong>Hours</strong> 10:00 - 18:00 Mon - Sat</p>
+      </div>
+      <div class="follow col" style="padding-left: 300px">
+        <h4>Follow Us</h4>
+        <div class="icon">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-pinterest-p"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+      <div class="col" style="padding-left: 100px">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="copyright">
+        <p>c Company X, 2024.All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
